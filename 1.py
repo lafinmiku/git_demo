@@ -11,8 +11,8 @@ payload = {
     "page": 3,
     "limit": 30,
     "isCategoryHeadline": 1,
-    "startAt": 1752644639, # Unix 時間戳：2025/07/15 06:17:19 (UTC)
-    "endAt": 1753508639    # Unix 時間戳：2025/07/25 06:17:19 (UTC)
+    "startAt": int((dt.datetime.today().timestamp(days = 11)).timestamp()), # Unix 時間戳：2025/07/15 06:17:19 (UTC)
+    "endAt": int(dt.datetime.today().timestamp())# Unix 時間戳：2025/07/25 06:17:19 (UTC)
 }
 
 # 發送 GET 請求
