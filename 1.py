@@ -32,4 +32,3 @@ df['link'] = df['newsId'].apply(lambda x: 'https://m.cnyes.com/news/id/' + str(x
 df.to_csv('news.csv', encoding="utf-8-sig")
 # 顯示 DataFrame
 print(df)
->>>>>>> release
