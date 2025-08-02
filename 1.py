@@ -50,6 +50,7 @@ df['link'] = df['newsId'].apply(lambda x: f"https://m.cnyes.com/news/id/{x}")
 
 # 存成 CSV
 df.to_csv('cnyes_news_full.csv', encoding='utf-8-sig', index=False)
+df.to.to_excel('news.xlsx', index=False)
 
 # 顯示前幾筆確認
 print(df.head(10))
